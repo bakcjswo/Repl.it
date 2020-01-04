@@ -6,6 +6,16 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
+function addClassList(event) {
+  toDoInput.classList.add("on-top");
+}
+
+function removeClassList(event) {
+  if (toDos.length < 1) {
+    toDoInput.classList.remove("on-top");
+  }
+}
+
 function deleteToDo(event) {
   const btn = event.target;
   const li = btn.parentNode;
@@ -16,6 +26,7 @@ function deleteToDo(event) {
   });
   toDos = cleanToDos;
   saveToDos();
+  removeClassList();
 }
 
 function saveToDos() {
@@ -50,7 +61,6 @@ function paintToDo(text) {
 function handleSubmit(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
-  console.log(currentValue);
   paintToDo(currentValue);
   toDoInput.value = "";
 }
@@ -68,6 +78,8 @@ function loadToDos() {
 function init() {
   loadToDos();
   toDoForm.addEventListener("submit", handleSubmit);
+  toDoInput.addEventListener("focus", addClassList);
+  toDoInput.addEventListener("blur", removeClassList);
 }
 
 init();

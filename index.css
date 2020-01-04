@@ -96,11 +96,12 @@
 }
 
 input {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
   padding: 10px 30px;
   border-radius: 40px;
-  transition: all 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
   outline: none;
-  margin: 5px 1px 3px 0px;
+  margin: 150px 1px 3px 0px;
   border: 4px solid #dddddd;
 }
 
@@ -110,6 +111,7 @@ input {
 
 input:focus {
   padding: 10px 30px;
+  border-top: 40px;
   border-radius: 40px;
   box-shadow: 0 0 5px rgba(81, 303, 238, 1);
   margin: 5px 1px 3px 0px;
@@ -167,11 +169,6 @@ body {
   margin-bottom: 30px;
 }
 
-.js-toDoForm__toDoForm {
-  margin-top: 50px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
-}
-
 .js-toDoList__toDoList {
   display: flex;
   flex-direction: row;
@@ -217,4 +214,12 @@ body {
   display: flex;
   flex-direction: row;
   padding-bottom: 10px;
+}
+
+.emptyspace {
+  padding-bottom: 20px;
+}
+
+.on-top {
+  margin-top: 0px;
 }
