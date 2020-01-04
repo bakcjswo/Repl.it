@@ -107,6 +107,7 @@ input {
 
 .showing {
   display: block;
+  padding-top: 20px;
 }
 
 input:focus {
@@ -145,7 +146,7 @@ body {
 
 .js-clock.clock {
   color: white;
-  padding-top: 120px;
+  padding-top: 140px;
   margin-bottom: 0px;
   font-size: 140px;
 }
@@ -164,9 +165,12 @@ body {
 }
 
 .js-weather {
-  color: white;
-  font-size: 30px;
+  color: rgb(214, 214, 214);
+  font-size: 20px;
   margin-bottom: 30px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .js-toDoList__toDoList {
@@ -224,4 +228,8 @@ body {
   padding: 10px 30px;
   border-radius: 40px;
   margin: 5px 1px 3px 0px;
+}
+
+.top-right {
+  padding: 15px 20px;
 }

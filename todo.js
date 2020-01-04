@@ -71,6 +71,7 @@ function loadToDos() {
     const parsedToDos = JSON.parse(loadedToDos);
     parsedToDos.forEach(function something(toDo) {
       paintToDo(toDo.text);
+      addClassList();
     });
   }
 }
