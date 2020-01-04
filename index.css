@@ -221,5 +221,7 @@ body {
 }
 
 .on-top {
-  margin-top: 0px;
+  padding: 10px 30px;
+  border-radius: 40px;
+  margin: 5px 1px 3px 0px;
 }
