@@ -35,7 +35,6 @@ function paintToDo(text) {
   li.appendChild(delBtn);
   li.appendChild(div);
   li.id = newId;
-  li.className = "js-toDoList__toDoList";
   toDoList.appendChild(li);
   li.classList.add("slide-bck-center-out");
   li.classList.remove("slide-bck-center-out");
@@ -50,6 +49,7 @@ function paintToDo(text) {
 function handleSubmit(event) {
   event.preventDefault();
   const currentValue = toDoInput.value;
+  console.log(currentValue);
   paintToDo(currentValue);
   toDoInput.value = "";
 }
