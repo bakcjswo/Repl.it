@@ -24,6 +24,7 @@ function saveToDos() {
 
 function paintToDo(text) {
   const li = document.createElement("li");
+  li.className = "toDoBox";
   const delBtn = document.createElement("button");
   delBtn.className = "js-delBtn";
   const div = document.createElement("div");
