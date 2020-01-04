@@ -12,27 +12,27 @@
  * animation slide-in-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes slide-in-bottom {
+@-webkit-keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes slide-in-bottom {
   0% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
   100% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -49,44 +49,42 @@
  * animation slide-out-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes slide-out-bottom {
+@-webkit-keyframes slide-out-bottom {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
 }
 @keyframes slide-out-bottom {
   0% {
     -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
   100% {
     -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    transform: translateY(30px);
     opacity: 0;
   }
 }
 
-
-.js-delBtn:hover{
+.js-delBtn:hover {
   background-color: rgb(196, 196, 196);
 }
 
-.js-delBtn:focus{
+.js-delBtn:focus {
   background-color: gray;
 }
 
-.js-delBtn:not(:hover){
+.js-delBtn:not(:hover) {
   background-color: white;
 }
-
 
 .form {
   display: none;
@@ -106,16 +104,16 @@ input {
   border: 4px solid #dddddd;
 }
 
+.showing {
+  display: block;
+}
+
 input:focus {
   padding: 10px 30px;
   border-radius: 40px;
-  box-shadow:0 0 5px rgba(81, 303, 238, 1));
+  box-shadow: 0 0 5px rgba(81, 303, 238, 1);
   margin: 5px 1px 3px 0px;
   border: 4px solid gray;
-}
-
-.showing {
-  display: block;
 }
 
 @keyframes fadeIn {
@@ -132,7 +130,7 @@ input:focus {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 150%;
   z-index: -1;
   animation: fadeIn 0.9s linear;
 }
@@ -144,38 +142,33 @@ body {
 }
 
 .js-clock.clock {
-  padding-top: 280px;
+  color: white;
+  padding-top: 120px;
   margin-bottom: 0px;
   font-size: 140px;
-  background: linear-gradient(to right, white 0%, white 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .js-greetings {
-  background: linear-gradient(to right, white 0%, white 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   margin-top: 0px;
   font-size: 40px;
-  padding-bottom: 80px;
 }
 
 .js-toDoList {
-  padding-top: 15px;
-  padding-bottom: 30px;
+  padding: 15px 30px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
 }
 
 .js-weather {
-  background: linear-gradient(to right, white 0%, white 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
-.js-toDoForm.toDoForm {
+.js-toDoForm__toDoForm {
+  margin-top: 50px;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
 }
 
@@ -185,24 +178,17 @@ body {
   padding-bottom: 5px;
 }
 
-.js-toDoList__toDoList.slide-bck-center-out {
-}
-
-.js-toDoList {
-  padding-left: 46%;
-}
-
 .js-toDoList__ToDoText {
-  background: linear-gradient(to right, white 0%, white 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   text-align: center;
   font-size: 20px;
-  -webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .js-delBtn {
+  margin-left: 46%;
   margin-right: 10px;
   border-radius: 10px;
   /*border: lightcyan;
@@ -216,11 +202,19 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  -webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-bottom 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.delToDoAnim{
-  -webkit-animation: slide-out-bottom 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: slide-out-bottom 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+.delToDoAnim {
+  -webkit-animation: slide-out-bottom 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: slide-out-bottom 0.7s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.toDoBox {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
 }
