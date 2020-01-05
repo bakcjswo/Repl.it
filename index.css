@@ -132,13 +132,15 @@ input:focus {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  height: 150%;
   z-index: -1;
   animation: fadeIn 0.9s linear;
 }
 
-body {
+body:not(.bgImage) {
+  /*z-index: 1;*/
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -168,7 +170,7 @@ body {
   color: rgb(214, 214, 214);
   font-size: 20px;
   margin-bottom: 30px;
-  z-index: 3;
+  /*z-index: 3;*/
   display: flex;
   flex-direction: row-reverse;
 }
