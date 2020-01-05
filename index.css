@@ -146,7 +146,7 @@ body {
 
 .js-clock.clock {
   color: white;
-  padding-top: 120px;
+
   margin-bottom: 0px;
   font-size: 170px;
 }
@@ -236,4 +236,12 @@ body {
 
 .askName {
   margin-bottom: 200px;
+}
+
+.js-clock.date {
+  color: white;
+  margin-bottom: 0px;
+  font-size: 40px;
+  padding-top: 120px;
+  font-style: italic;
 }
