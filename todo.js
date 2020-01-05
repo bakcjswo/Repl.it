@@ -79,6 +79,7 @@ function loadToDos() {
 function init() {
   localStorage.getItem("toDos");
   if (localStorage.getItem("toDos") === null) {
+    console.log(localStorage.getItem("toDos"));
     localStorage.setItem(TODOS_LS, "[]");
   }
   loadToDos();
