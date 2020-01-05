@@ -1,10 +1,12 @@
-const toDoForm = document.querySelector(".js-toDoForm"),
+const toDoForm = window.document.querySelector(".js-toDoForm"),
   toDoInput = toDoForm.querySelector("input"),
-  toDoList = document.querySelector(".js-toDoList");
+  toDoList = window.document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
 
 let toDos = [];
+
+localStorage.setItem("toDos", "[]");
 
 function addClassList(event) {
   toDoInput.classList.add("on-top");
