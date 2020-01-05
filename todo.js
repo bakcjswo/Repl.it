@@ -4,7 +4,7 @@ const toDoForm = window.document.querySelector(".js-toDoForm"),
 
 const TODOS_LS = "toDos";
 
-let toDos = [];
+var toDos = [];
 
 function addClassList(event) {
   toDoInput.classList.add("on-top");
@@ -81,7 +81,6 @@ function init() {
   toDoForm.addEventListener("submit", handleSubmit);
   toDoInput.addEventListener("focus", addClassList);
   toDoInput.addEventListener("blur", removeClassList);
-
   if (toDos.length < 1) {
     localStorage.setItem(TODOS_LS, "[]");
   }
